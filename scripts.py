@@ -32,12 +32,11 @@ for read in os.listdir(SampleData):
     os.system(fastq_quality_trimmer)
     fastqc_quality_trimmer = "fastqc /space/s2/andrew/Output_Dir/" + fastq_qualitytrimmer_output  + " -o " + "/space/s2/andrew/Output_Dir/CleanedFastq"
     os.system(fastqc_quality_trimmer)
-
-runSTAR = "/space/s2/andrew/software/STAR-2.7.10b/bin/Linux_x86_64_static/STAR"
-REF_SEQ = "/space/s2/andrew/yeast_genome"
-
-FILES = "/space/s2/andrew/Output_Dir/CleanedFastq/*_fqto_fastqc.zip"
-FILE = " echo " + FILES + " | sed 's/ //g'"
-runSTARprocess = runSTAR + " --genomeDir " + REF_SEQ + "/STARindex/ --readFilesIn " + FILES + " --readFilesCommand zcat --outFileNamePrefix /space/s2/andrew/Output_Dir/CleanedFastq/alignedreads/aligned_read --outFilterMultimapNmax 1 --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate --twopassMode Basic --runThreadN 1"
-os.system(runSTARprocess)
+   
+Cleaned_Files = FullName + "_fqto_fastqc.zip"
+ runSTAR = "/space/s2/andrew/software/STAR-2.7.10b/bin/Linux_x86_64_static/STAR"
+ REF_SEQ = "/space/s2/andrew/yeast_genome"
+ FILES = "/space/s2/andrew/Output_Dir/CleanedFastq/" + Cleaned_Files
+ runSTARprocess = runSTAR + " --genomeDir " + REF_SEQ + "/STARindex/ --readFilesIn " + FILES + " --readFilesCommand zcat --outFileNamePrefix /space/s2/andrew/Output_Dir/CleanedFastq/alignedreads/aligned_read --outFilterMultimapNmax 1 --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate --twopassMode Basic --runThreadN 1"
+    os.system(runSTARprocess)
 
