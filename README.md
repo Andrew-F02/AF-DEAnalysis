@@ -1,4 +1,7 @@
 AF-FastQAligner
+===========================================
+Function 
+
 This is a script that takes an input directory of raw RNA read sample files, 
 in the form of FASTA or FASTQ, and aligns them to an annotated genome. 
 Give it an input Directory with the FASTQ files you want to be aligned, it will first print out the name of the read file that it is currently working on. 
