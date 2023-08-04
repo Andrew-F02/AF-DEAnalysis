@@ -1,0 +1,26 @@
+STAR version=2.7.10b
+STAR compilation time,server,dir=2022-11-01T09:53:26-04:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+STAR git: On branch master ; commit c6f8efc2c7043ef83bf8b0d9bed36bbb6b9b1133 ; diff files: CHANGES.md 
+##### Command Line:
+/space/s2/andrew/software/STAR-2.7.10b/bin/Linux_x86_64_static/STAR --genomeDir /space/s2/andrew/yeast_genome/STARindex/ --readFilesIn /space/s2/andrew/Output_Dir/ERR458815_fqto.fastq /space/s2/andrew/Output_Dir/ERR458816_fqto.fastq /space/s2/andrew/Output_Dir/ERR458817_fqto.fastq /space/s2/andrew/Output_Dir/ERR458818_fqto.fastq
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+genomeDir                     /space/s2/andrew/yeast_genome/STARindex/     ~RE-DEFINED
+readFilesIn                   /space/s2/andrew/Output_Dir/ERR458815_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458816_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458817_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458818_fqto.fastq        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+genomeDir                         /space/s2/andrew/yeast_genome/STARindex/
+readFilesIn                       /space/s2/andrew/Output_Dir/ERR458815_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458816_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458817_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458818_fqto.fastq   
+
+-------------------------------
+##### Final effective command line:
+/space/s2/andrew/software/STAR-2.7.10b/bin/Linux_x86_64_static/STAR   --genomeDir /space/s2/andrew/yeast_genome/STARindex/   --readFilesIn /space/s2/andrew/Output_Dir/ERR458815_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458816_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458817_fqto.fastq   /space/s2/andrew/Output_Dir/ERR458818_fqto.fastq   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+EXITING: because of fatal input ERROR: number of read mates files > 2: 4
+SOLUTION:specify only one or two files in the --readFilesIn option. If file names contain spaces, use quotes: "file name"
+
+Aug 01 19:10:10 ...... FATAL ERROR, exiting
