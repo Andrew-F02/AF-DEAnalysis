@@ -1,6 +1,6 @@
 AF-DEAnalysis
 =====
-This is a Python script that takes an input directory of raw RNA read sample files froma dataset of two populations of S. cerevisiae, WT and snf2 knock-down, mapping them by aligning them to an annotated genome. 
+This is a Python script that takes an input directory of raw RNA read sample files from a dataset of two populations of S. cerevisiae, WT and snf2 knock-down, mapping them by aligning them to an annotated genome. 
 
 Programs
 =====
