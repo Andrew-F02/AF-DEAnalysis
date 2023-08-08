@@ -1,6 +1,6 @@
 AF-DEAnalysis
 =====
-This is a Python script that takes an input directory of raw RNA read sample files from a dataset of two populations of S. cerevisiae, WT and snf2 knock-down, mapping them by aligning them to an annotated genome. 
+This is a Python script that takes an input directory of raw RNA read FASTQ sample files from a given condition and maps the sample files by aligning them to an annotated genome. 
 
 Programs
 =====
@@ -23,7 +23,7 @@ Once all samples files in the directory have undergone trimming, they will be ma
 Future Implementations
 ======================
 In the future, this script will be added on to be able to:
-* Seperate the reads by type, WT and snf2, using a manifest
+* Seperate the reads by type using a manifest
 * Quantify reads by performing gene based counting
 * Normalize reads
 * Do a DE expression test
