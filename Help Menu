@@ -1,0 +1,8 @@
+
+
+Usage:
+python3 scripts.py [-m] [input directory]
+
+Options:
+[-h] -brings up this menu
+[-m] -prints the name of the given directory
